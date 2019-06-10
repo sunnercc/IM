@@ -14,8 +14,8 @@
                 <outlet property="chatTableView" destination="W62-NG-cIe" id="zrg-qS-Pbd"/>
                 <outlet property="fixViewBottom" destination="FWb-pc-eGe" id="0cE-vA-1Du"/>
                 <outlet property="fixViewH" destination="kN6-fb-cI5" id="E5G-IW-eAT"/>
-                <outlet property="input" destination="iWr-cI-skn" id="Gm7-HK-pfD"/>
-                <outlet property="toolView" destination="4rH-VK-g5e" id="4fd-zQ-yrM"/>
+                <outlet property="moreToolView" destination="fSO-1s-qbv" id="xAi-tl-7Hx"/>
+                <outlet property="toolView" destination="4rH-VK-g5e" id="GE1-E6-VQs"/>
                 <outlet property="toolViewH" destination="fb7-3C-MrW" id="slV-EY-Pye"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -33,7 +33,7 @@
                         <outlet property="delegate" destination="-1" id="Ri3-jb-JEo"/>
                     </connections>
                 </tableView>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4rH-VK-g5e">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4rH-VK-g5e" customClass="ChatToolBarView">
                     <rect key="frame" x="0.0" y="636" width="414" height="50"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZCY-Wz-lkT">
@@ -46,6 +46,9 @@
                             <state key="normal" title="B">
                                 <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
+                            <connections>
+                                <action selector="status:" destination="4rH-VK-g5e" eventType="touchUpInside" id="w81-kb-w9e"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t1Z-zV-BhQ">
                             <rect key="frame" x="369" y="5" width="40" height="40"/>
@@ -55,6 +58,14 @@
                                 <constraint firstAttribute="width" constant="40" id="E8z-Lf-Wcc"/>
                             </constraints>
                             <state key="normal" title="B"/>
+                            <connections>
+                                <action selector="moreTool:" destination="4rH-VK-g5e" eventType="touchUpInside" id="7Jc-SG-o4E"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2WA-Pa-4ot">
+                            <rect key="frame" x="50" y="5" width="314" height="40"/>
+                            <color key="backgroundColor" red="0.45882352939999999" green="0.73333333329999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="按住说话"/>
                         </button>
                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="iWr-cI-skn">
                             <rect key="frame" x="50" y="5" width="314" height="40"/>
@@ -66,15 +77,25 @@
                     <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="bottom" secondItem="t1Z-zV-BhQ" secondAttribute="bottom" constant="5" id="6cY-WG-2G1"/>
+                        <constraint firstItem="2WA-Pa-4ot" firstAttribute="leading" secondItem="ZCY-Wz-lkT" secondAttribute="trailing" constant="5" id="AWt-7h-0Vc"/>
                         <constraint firstItem="iWr-cI-skn" firstAttribute="top" secondItem="4rH-VK-g5e" secondAttribute="top" constant="5" id="GY6-wk-fM6"/>
                         <constraint firstItem="ZCY-Wz-lkT" firstAttribute="leading" secondItem="4rH-VK-g5e" secondAttribute="leading" constant="5" id="GdY-vb-teI"/>
+                        <constraint firstItem="t1Z-zV-BhQ" firstAttribute="leading" secondItem="2WA-Pa-4ot" secondAttribute="trailing" constant="5" id="JO7-9g-1Mx"/>
+                        <constraint firstItem="2WA-Pa-4ot" firstAttribute="top" secondItem="4rH-VK-g5e" secondAttribute="top" constant="5" id="JPh-Mp-69c"/>
                         <constraint firstItem="t1Z-zV-BhQ" firstAttribute="leading" secondItem="iWr-cI-skn" secondAttribute="trailing" constant="5" id="UG2-lb-IfB"/>
                         <constraint firstAttribute="bottom" secondItem="ZCY-Wz-lkT" secondAttribute="bottom" constant="5" id="WT4-0g-Tk3"/>
                         <constraint firstAttribute="height" constant="50" id="fb7-3C-MrW"/>
                         <constraint firstAttribute="trailing" secondItem="t1Z-zV-BhQ" secondAttribute="trailing" constant="5" id="gPq-qq-CYN"/>
+                        <constraint firstAttribute="bottom" secondItem="2WA-Pa-4ot" secondAttribute="bottom" constant="5" id="haS-r6-ihD"/>
                         <constraint firstItem="iWr-cI-skn" firstAttribute="leading" secondItem="ZCY-Wz-lkT" secondAttribute="trailing" constant="5" id="ipC-Py-3df"/>
                         <constraint firstAttribute="bottom" secondItem="iWr-cI-skn" secondAttribute="bottom" constant="5" id="msR-PL-Sy4"/>
                     </constraints>
+                    <connections>
+                        <outlet property="input" destination="iWr-cI-skn" id="loL-hI-7T1"/>
+                        <outlet property="moreToolButton" destination="t1Z-zV-BhQ" id="nDG-yg-uff"/>
+                        <outlet property="statusButton" destination="ZCY-Wz-lkT" id="6ex-sU-zcy"/>
+                        <outlet property="voiceInput" destination="2WA-Pa-4ot" id="Tvf-kd-OJm"/>
+                    </connections>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5hw-Wi-oU6">
                     <rect key="frame" x="0.0" y="686" width="414" height="50"/>
@@ -83,10 +104,19 @@
                         <constraint firstAttribute="height" constant="50" id="kN6-fb-cI5"/>
                     </constraints>
                 </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fSO-1s-qbv" customClass="ChatMoreToolView">
+                    <rect key="frame" x="0.0" y="686" width="414" height="200"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="97o-Pk-ohH"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="fSO-1s-qbv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0Fo-v6-lWA"/>
                 <constraint firstAttribute="trailing" secondItem="5hw-Wi-oU6" secondAttribute="trailing" id="4t0-YH-0KC"/>
+                <constraint firstAttribute="trailing" secondItem="fSO-1s-qbv" secondAttribute="trailing" id="BI2-Zq-rSg"/>
                 <constraint firstItem="W62-NG-cIe" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Ecv-qp-068"/>
                 <constraint firstAttribute="bottom" secondItem="5hw-Wi-oU6" secondAttribute="bottom" id="FWb-pc-eGe"/>
                 <constraint firstItem="5hw-Wi-oU6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="KjW-Vt-tTS"/>
@@ -95,6 +125,7 @@
                 <constraint firstAttribute="trailing" secondItem="W62-NG-cIe" secondAttribute="trailing" id="UOW-E9-x5P"/>
                 <constraint firstAttribute="trailing" secondItem="4rH-VK-g5e" secondAttribute="trailing" id="Ub1-eR-6ZA"/>
                 <constraint firstItem="W62-NG-cIe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Xej-b8-INk"/>
+                <constraint firstItem="fSO-1s-qbv" firstAttribute="top" secondItem="4rH-VK-g5e" secondAttribute="bottom" id="f5N-1N-nhO"/>
                 <constraint firstItem="4rH-VK-g5e" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gy4-02-nvr"/>
             </constraints>
             <point key="canvasLocation" x="-107.24637681159422" y="-64.402173913043484"/>

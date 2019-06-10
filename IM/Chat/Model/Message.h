@@ -19,14 +19,17 @@ typedef NS_ENUM(NSUInteger, MessageSenderType) {
 typedef NS_ENUM(NSUInteger, MessageType) {
     MessageTypeText,
     MessageTypeTime,
+    MessageTypeVoice,
 };
 
 @interface Message : NSObject
 @property (nonatomic, assign) MessageSenderType senderType;
 @property (nonatomic, assign) MessageType type;
-@property (nonatomic, assign) NSTimeInterval timestamp;
-@property (nonatomic, copy) NSString *text;
 @property (nonatomic, readonly) CGSize cellSize;
+@property (nonatomic, copy) NSString *text;
+@property (nonatomic, assign) NSTimeInterval timestamp;
+@property (nonatomic, strong) NSString *voicePath;
+@property (nonatomic, strong) NSString *voiceDuration;
 @end
 
 NS_ASSUME_NONNULL_END

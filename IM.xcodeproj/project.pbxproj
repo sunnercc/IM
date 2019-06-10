@@ -14,6 +14,25 @@
 		A270F02622AE2C4B000C3D44 /* ChatMessageTimeViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A270F02422AE2C4B000C3D44 /* ChatMessageTimeViewCell.xib */; };
 		A270F02A22AE2D82000C3D44 /* StringUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A270F02922AE2D82000C3D44 /* StringUtils.m */; };
 		A270F02D22AE32A4000C3D44 /* NSDate+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = A270F02C22AE32A3000C3D44 /* NSDate+Utilities.m */; };
+		A270F03022AE4AED000C3D44 /* ChatToolBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = A270F02F22AE4AED000C3D44 /* ChatToolBarView.m */; };
+		A270F03C22AE5520000C3D44 /* XHVoiceCommonHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A270F03922AE551F000C3D44 /* XHVoiceCommonHelper.m */; };
+		A270F03D22AE5520000C3D44 /* XHVoiceRecordHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A270F03A22AE551F000C3D44 /* XHVoiceRecordHelper.m */; };
+		A270F03E22AE5520000C3D44 /* XHVoiceRecordHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A270F03B22AE551F000C3D44 /* XHVoiceRecordHUD.m */; };
+		A270F04922AE5595000C3D44 /* RecordingSignal005@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A270F04022AE5594000C3D44 /* RecordingSignal005@2x.png */; };
+		A270F04A22AE5595000C3D44 /* RecordingSignal000@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A270F04122AE5594000C3D44 /* RecordingSignal000@2x.png */; };
+		A270F04B22AE5595000C3D44 /* RecordingSignal001@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A270F04222AE5594000C3D44 /* RecordingSignal001@2x.png */; };
+		A270F04C22AE5595000C3D44 /* RecordingSignal004@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A270F04322AE5595000C3D44 /* RecordingSignal004@2x.png */; };
+		A270F04D22AE5595000C3D44 /* RecordingSignal002@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A270F04422AE5595000C3D44 /* RecordingSignal002@2x.png */; };
+		A270F04E22AE5595000C3D44 /* RecordingSignal003@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A270F04522AE5595000C3D44 /* RecordingSignal003@2x.png */; };
+		A270F04F22AE5595000C3D44 /* RecordingSignal006@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A270F04622AE5595000C3D44 /* RecordingSignal006@2x.png */; };
+		A270F05022AE5595000C3D44 /* RecordingSignal007@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A270F04722AE5595000C3D44 /* RecordingSignal007@2x.png */; };
+		A270F05122AE5595000C3D44 /* RecordingSignal008@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A270F04822AE5595000C3D44 /* RecordingSignal008@2x.png */; };
+		A270F05322AE55AB000C3D44 /* RecordCancel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A270F05222AE55AB000C3D44 /* RecordCancel@2x.png */; };
+		A270F05622AE55FA000C3D44 /* RecordingBkg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A270F05422AE55F9000C3D44 /* RecordingBkg@3x.png */; };
+		A270F05722AE55FA000C3D44 /* RecordingBkg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A270F05522AE55F9000C3D44 /* RecordingBkg@2x.png */; };
+		A270F05922AE6DD3000C3D44 /* ReceiverVoiceNodePlaying@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A270F05822AE6DD3000C3D44 /* ReceiverVoiceNodePlaying@2x.png */; };
+		A270F05B22AE6DED000C3D44 /* SenderVoiceNodePlaying@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A270F05A22AE6DED000C3D44 /* SenderVoiceNodePlaying@2x.png */; };
+		A270F05E22AE7849000C3D44 /* ChatMoreToolView.m in Sources */ = {isa = PBXBuildFile; fileRef = A270F05D22AE7849000C3D44 /* ChatMoreToolView.m */; };
 		A2D5CF2522A8B379007BE8D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D5CF2422A8B379007BE8D0 /* AppDelegate.m */; };
 		A2D5CF2822A8B379007BE8D0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D5CF2722A8B379007BE8D0 /* ViewController.m */; };
 		A2D5CF2B22A8B379007BE8D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2D5CF2922A8B379007BE8D0 /* Main.storyboard */; };
@@ -40,6 +59,33 @@
 		A270F02922AE2D82000C3D44 /* StringUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringUtils.m; sourceTree = "<group>"; };
 		A270F02B22AE32A3000C3D44 /* NSDate+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utilities.h"; sourceTree = "<group>"; };
 		A270F02C22AE32A3000C3D44 /* NSDate+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utilities.m"; sourceTree = "<group>"; };
+		A270F02E22AE4AED000C3D44 /* ChatToolBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatToolBarView.h; sourceTree = "<group>"; };
+		A270F02F22AE4AED000C3D44 /* ChatToolBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatToolBarView.m; sourceTree = "<group>"; };
+		A270F03222AE551F000C3D44 /* XHVoiceCommonHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHVoiceCommonHelper.h; sourceTree = "<group>"; };
+		A270F03322AE551F000C3D44 /* XHVoiceRecordHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHVoiceRecordHelper.h; sourceTree = "<group>"; };
+		A270F03422AE551F000C3D44 /* XHVoiceRecordHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHVoiceRecordHUD.h; sourceTree = "<group>"; };
+		A270F03622AE551F000C3D44 /* XHMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHMacro.h; sourceTree = "<group>"; };
+		A270F03722AE551F000C3D44 /* XHFoundationMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHFoundationMacro.h; sourceTree = "<group>"; };
+		A270F03822AE551F000C3D44 /* XHUIKitMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHUIKitMacro.h; sourceTree = "<group>"; };
+		A270F03922AE551F000C3D44 /* XHVoiceCommonHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHVoiceCommonHelper.m; sourceTree = "<group>"; };
+		A270F03A22AE551F000C3D44 /* XHVoiceRecordHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHVoiceRecordHelper.m; sourceTree = "<group>"; };
+		A270F03B22AE551F000C3D44 /* XHVoiceRecordHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHVoiceRecordHUD.m; sourceTree = "<group>"; };
+		A270F04022AE5594000C3D44 /* RecordingSignal005@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingSignal005@2x.png"; sourceTree = "<group>"; };
+		A270F04122AE5594000C3D44 /* RecordingSignal000@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingSignal000@2x.png"; sourceTree = "<group>"; };
+		A270F04222AE5594000C3D44 /* RecordingSignal001@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingSignal001@2x.png"; sourceTree = "<group>"; };
+		A270F04322AE5595000C3D44 /* RecordingSignal004@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingSignal004@2x.png"; sourceTree = "<group>"; };
+		A270F04422AE5595000C3D44 /* RecordingSignal002@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingSignal002@2x.png"; sourceTree = "<group>"; };
+		A270F04522AE5595000C3D44 /* RecordingSignal003@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingSignal003@2x.png"; sourceTree = "<group>"; };
+		A270F04622AE5595000C3D44 /* RecordingSignal006@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingSignal006@2x.png"; sourceTree = "<group>"; };
+		A270F04722AE5595000C3D44 /* RecordingSignal007@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingSignal007@2x.png"; sourceTree = "<group>"; };
+		A270F04822AE5595000C3D44 /* RecordingSignal008@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingSignal008@2x.png"; sourceTree = "<group>"; };
+		A270F05222AE55AB000C3D44 /* RecordCancel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordCancel@2x.png"; sourceTree = "<group>"; };
+		A270F05422AE55F9000C3D44 /* RecordingBkg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingBkg@3x.png"; sourceTree = "<group>"; };
+		A270F05522AE55F9000C3D44 /* RecordingBkg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingBkg@2x.png"; sourceTree = "<group>"; };
+		A270F05822AE6DD3000C3D44 /* ReceiverVoiceNodePlaying@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ReceiverVoiceNodePlaying@2x.png"; sourceTree = "<group>"; };
+		A270F05A22AE6DED000C3D44 /* SenderVoiceNodePlaying@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SenderVoiceNodePlaying@2x.png"; sourceTree = "<group>"; };
+		A270F05C22AE7849000C3D44 /* ChatMoreToolView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatMoreToolView.h; sourceTree = "<group>"; };
+		A270F05D22AE7849000C3D44 /* ChatMoreToolView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatMoreToolView.m; sourceTree = "<group>"; };
 		A2D5CF2022A8B379007BE8D0 /* IM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2D5CF2322A8B379007BE8D0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A2D5CF2422A8B379007BE8D0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -78,6 +124,8 @@
 		A270F01122AE06C0000C3D44 /* IMResources */ = {
 			isa = PBXGroup;
 			children = (
+				A270F05A22AE6DED000C3D44 /* SenderVoiceNodePlaying@2x.png */,
+				A270F05822AE6DD3000C3D44 /* ReceiverVoiceNodePlaying@2x.png */,
 				A270F01922AE0DDC000C3D44 /* receiveChat@2x.png */,
 				A270F01822AE0DDC000C3D44 /* sendChat@2x.png */,
 			);
@@ -91,6 +139,50 @@
 				A270F02922AE2D82000C3D44 /* StringUtils.m */,
 			);
 			path = IMUtils;
+			sourceTree = "<group>";
+		};
+		A270F03122AE551F000C3D44 /* RecordView */ = {
+			isa = PBXGroup;
+			children = (
+				A270F03F22AE5574000C3D44 /* Resources */,
+				A270F03222AE551F000C3D44 /* XHVoiceCommonHelper.h */,
+				A270F03322AE551F000C3D44 /* XHVoiceRecordHelper.h */,
+				A270F03422AE551F000C3D44 /* XHVoiceRecordHUD.h */,
+				A270F03522AE551F000C3D44 /* Macro */,
+				A270F03922AE551F000C3D44 /* XHVoiceCommonHelper.m */,
+				A270F03A22AE551F000C3D44 /* XHVoiceRecordHelper.m */,
+				A270F03B22AE551F000C3D44 /* XHVoiceRecordHUD.m */,
+			);
+			path = RecordView;
+			sourceTree = "<group>";
+		};
+		A270F03522AE551F000C3D44 /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				A270F03622AE551F000C3D44 /* XHMacro.h */,
+				A270F03722AE551F000C3D44 /* XHFoundationMacro.h */,
+				A270F03822AE551F000C3D44 /* XHUIKitMacro.h */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		A270F03F22AE5574000C3D44 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A270F05522AE55F9000C3D44 /* RecordingBkg@2x.png */,
+				A270F05422AE55F9000C3D44 /* RecordingBkg@3x.png */,
+				A270F05222AE55AB000C3D44 /* RecordCancel@2x.png */,
+				A270F04122AE5594000C3D44 /* RecordingSignal000@2x.png */,
+				A270F04222AE5594000C3D44 /* RecordingSignal001@2x.png */,
+				A270F04422AE5595000C3D44 /* RecordingSignal002@2x.png */,
+				A270F04522AE5595000C3D44 /* RecordingSignal003@2x.png */,
+				A270F04322AE5595000C3D44 /* RecordingSignal004@2x.png */,
+				A270F04022AE5594000C3D44 /* RecordingSignal005@2x.png */,
+				A270F04622AE5595000C3D44 /* RecordingSignal006@2x.png */,
+				A270F04722AE5595000C3D44 /* RecordingSignal007@2x.png */,
+				A270F04822AE5595000C3D44 /* RecordingSignal008@2x.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		A2D5CF1722A8B379007BE8D0 = {
@@ -167,6 +259,7 @@
 		A2D5CF4A22A8DC1B007BE8D0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A270F03122AE551F000C3D44 /* RecordView */,
 				A2D5CF6622A8E597007BE8D0 /* ChatMessageViewCell.h */,
 				A2D5CF6722A8E597007BE8D0 /* ChatMessageViewCell.m */,
 				A270F01222AE09A2000C3D44 /* ChatMessageContentView.h */,
@@ -174,6 +267,10 @@
 				A270F02222AE2C4B000C3D44 /* ChatMessageTimeViewCell.h */,
 				A270F02322AE2C4B000C3D44 /* ChatMessageTimeViewCell.m */,
 				A270F02422AE2C4B000C3D44 /* ChatMessageTimeViewCell.xib */,
+				A270F02E22AE4AED000C3D44 /* ChatToolBarView.h */,
+				A270F02F22AE4AED000C3D44 /* ChatToolBarView.m */,
+				A270F05C22AE7849000C3D44 /* ChatMoreToolView.h */,
+				A270F05D22AE7849000C3D44 /* ChatMoreToolView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -235,13 +332,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A270F04B22AE5595000C3D44 /* RecordingSignal001@2x.png in Resources */,
 				A270F01A22AE0DDD000C3D44 /* sendChat@2x.png in Resources */,
 				A2D5CF3022A8B37A007BE8D0 /* LaunchScreen.storyboard in Resources */,
+				A270F04D22AE5595000C3D44 /* RecordingSignal002@2x.png in Resources */,
+				A270F04E22AE5595000C3D44 /* RecordingSignal003@2x.png in Resources */,
+				A270F04A22AE5595000C3D44 /* RecordingSignal000@2x.png in Resources */,
+				A270F04C22AE5595000C3D44 /* RecordingSignal004@2x.png in Resources */,
 				A2D5CF2D22A8B37A007BE8D0 /* Assets.xcassets in Resources */,
 				A2D5CF3E22A8B3D8007BE8D0 /* ChatViewController.xib in Resources */,
+				A270F05322AE55AB000C3D44 /* RecordCancel@2x.png in Resources */,
+				A270F05B22AE6DED000C3D44 /* SenderVoiceNodePlaying@2x.png in Resources */,
+				A270F05122AE5595000C3D44 /* RecordingSignal008@2x.png in Resources */,
 				A270F01B22AE0DDD000C3D44 /* receiveChat@2x.png in Resources */,
+				A270F05022AE5595000C3D44 /* RecordingSignal007@2x.png in Resources */,
 				A2D5CF2B22A8B379007BE8D0 /* Main.storyboard in Resources */,
+				A270F04922AE5595000C3D44 /* RecordingSignal005@2x.png in Resources */,
 				A270F02622AE2C4B000C3D44 /* ChatMessageTimeViewCell.xib in Resources */,
+				A270F05722AE55FA000C3D44 /* RecordingBkg@2x.png in Resources */,
+				A270F05922AE6DD3000C3D44 /* ReceiverVoiceNodePlaying@2x.png in Resources */,
+				A270F05622AE55FA000C3D44 /* RecordingBkg@3x.png in Resources */,
+				A270F04F22AE5595000C3D44 /* RecordingSignal006@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,9 +363,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A270F03D22AE5520000C3D44 /* XHVoiceRecordHelper.m in Sources */,
 				A2D5CF2822A8B379007BE8D0 /* ViewController.m in Sources */,
 				A270F02A22AE2D82000C3D44 /* StringUtils.m in Sources */,
+				A270F03E22AE5520000C3D44 /* XHVoiceRecordHUD.m in Sources */,
 				A270F02522AE2C4B000C3D44 /* ChatMessageTimeViewCell.m in Sources */,
+				A270F05E22AE7849000C3D44 /* ChatMoreToolView.m in Sources */,
+				A270F03C22AE5520000C3D44 /* XHVoiceCommonHelper.m in Sources */,
 				A2D5CF3322A8B37A007BE8D0 /* main.m in Sources */,
 				A270F01422AE09A2000C3D44 /* ChatMessageContentView.m in Sources */,
 				A2D5CF4522A8CCF6007BE8D0 /* UITableView+ct.m in Sources */,
@@ -263,6 +378,7 @@
 				A2D5CF3D22A8B3D8007BE8D0 /* ChatViewController.m in Sources */,
 				A2D5CF4222A8C44B007BE8D0 /* NSString+ct.m in Sources */,
 				A2D5CF6922A8E597007BE8D0 /* ChatMessageViewCell.m in Sources */,
+				A270F03022AE4AED000C3D44 /* ChatToolBarView.m in Sources */,
 				A2D5CF2522A8B379007BE8D0 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

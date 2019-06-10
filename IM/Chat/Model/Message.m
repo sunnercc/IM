@@ -25,12 +25,18 @@
         CGFloat w = size.width;
         CGFloat h = ((size.height / kfont.pointSize) + 1) * kfontH;
         if (h < kphotoH) h = kphotoH;
-//        if (w < kphotoW) w = kphotoW;
-        w += (kcontentPadding * 2 + kphoto2contentMargin + kphoto2CellMargin + kphotoW + kbubbleOffset);
+        w += (kcontentPadding * 2 + kphoto2contentMargin + kphoto2CellMargin + kphotoW + kbubbleOffset + kVoiceTimeLabelW);
         h += (kCellTopMargin + kCellBottomMargin);
         return CGSizeMake(w, h);
     } else if (_type == MessageTypeTime) {
         return CGSizeMake(kCellW, 31);
+    } else if (_type == MessageTypeVoice) {
+        CGFloat w = 0;
+        CGFloat h = kphotoH;
+        w = 10 + _voiceDuration.integerValue * (kcontentW / 60);
+        w += (kcontentPadding * 2 + kphoto2contentMargin + kphoto2CellMargin + kphotoW + kbubbleOffset + kVoiceTimeLabelW);
+        h += (kCellTopMargin + kCellBottomMargin);
+        return CGSizeMake(w, h);
     }
     return CGSizeZero;
 }

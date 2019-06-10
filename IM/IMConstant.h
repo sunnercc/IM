@@ -21,5 +21,6 @@
 #define kfontH 20
 #define kcontentPadding 10 // content内边距
 #define kbubbleOffset 8 // 聊天气泡伸出的距离
+#define kVoiceTimeLabelW 30 // 显示语音秒数
 #define kTimeOffset 60 * 2 // 2分钟以外显示时间
 #endif /* IMConstant_h */

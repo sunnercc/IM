@@ -13,6 +13,7 @@
 @interface ChatMessageViewCell ()
 @property (nonatomic, strong) UIButton *photo;
 @property (nonatomic, strong) ChatMessageContentView *messageView;
+@property (nonatomic, strong) UILabel *time;
 @end
 
 @implementation ChatMessageViewCell
@@ -37,6 +38,10 @@
         [self addSubview:self.photo];
         self.messageView = [[ChatMessageContentView alloc] init];
         [self addSubview:self.messageView];
+        self.time = [[UILabel alloc] init];
+        self.time.font = kfont;
+        self.time.textAlignment = NSTextAlignmentCenter;
+        [self addSubview:self.time];
     }
     return self;
 }
@@ -44,6 +49,12 @@
 - (void)setMessage:(Message *)message {
     _message = message;
     _messageView.message = message;
+    if (_message.type == MessageTypeVoice) {
+        _time.hidden = NO;
+        _time.text = [NSString stringWithFormat:@"%ld''", _message.voiceDuration.integerValue];
+    } else {
+        _time.hidden = YES;
+    }
 }
 
 - (void)layoutSubviews {
@@ -60,11 +71,17 @@
         CGFloat photoY = kCellTopMargin;
         self.photo.frame = CGRectMake(photoX, photoY, photoW, photoH);
         // messageView
-        CGFloat messageViewX = self.frame.size.width - _message.cellSize.width;
+        CGFloat messageViewX = self.frame.size.width - (_message.cellSize.width - kVoiceTimeLabelW);
         CGFloat messageViewY = kCellTopMargin;
-        CGFloat messageViewW = _message.cellSize.width - kphotoW - kphoto2contentMargin - kphoto2CellMargin;
+        CGFloat messageViewW = _message.cellSize.width - kphotoW - kphoto2contentMargin - kphoto2CellMargin - kVoiceTimeLabelW;
         CGFloat messageViewH = _message.cellSize.height - kCellTopMargin - kCellBottomMargin;
         self.messageView.frame = CGRectMake(messageViewX, messageViewY, messageViewW, messageViewH);
+        // voice time label
+        CGFloat timeW = kVoiceTimeLabelW;
+        CGFloat timeH = messageViewH;
+        CGFloat timeX = CGRectGetMinX(self.messageView.frame)-timeW;
+        CGFloat timeY = messageViewY;
+        self.time.frame = CGRectMake(timeX, timeY, timeW, timeH);
     }
     else if (_message.senderType == MessageSenderTypeOther) {
         // photo
@@ -76,9 +93,15 @@
         // messageView
         CGFloat messageViewX = photoX + photoW + kphoto2contentMargin;
         CGFloat messageViewY = photoY;
-        CGFloat messageViewW = _message.cellSize.width - kphotoW - kphoto2contentMargin - kphoto2CellMargin;
+        CGFloat messageViewW = _message.cellSize.width - kphotoW - kphoto2contentMargin - kphoto2CellMargin - kVoiceTimeLabelW;
         CGFloat messageViewH = _message.cellSize.height - kCellTopMargin - kCellBottomMargin;
         self.messageView.frame = CGRectMake(messageViewX, messageViewY, messageViewW, messageViewH);
+        // voice time label
+        CGFloat timeW = kVoiceTimeLabelW;
+        CGFloat timeH = messageViewH;
+        CGFloat timeX = CGRectGetMaxX(self.messageView.frame);
+        CGFloat timeY = messageViewY;
+        self.time.frame = CGRectMake(timeX, timeY, timeW, timeH);
     }
 }
 
