@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Chat/ChatViewController.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    ChatViewController *ChatVC = [[ChatViewController alloc] initWithNibName:NSStringFromClass([ChatViewController class]) bundle:nil];
+    [self.navigationController pushViewController:ChatVC animated:YES];
 }
 
 
