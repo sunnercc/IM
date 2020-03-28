@@ -22,7 +22,7 @@
 #define kInputH 50
 #define kInputMaxH 200
 
-@interface ChatViewController () <UITableViewDelegate, UITableViewDataSource, SendMessageDelegate>
+@interface ChatViewController () <UITableViewDelegate, UITableViewDataSource, SendMessageDelegate, ChatMoreToolDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *chatTableView;
 @property (weak, nonatomic) IBOutlet ChatToolBarView *toolView;
 @property (weak, nonatomic) IBOutlet ChatMoreToolView *moreToolView;
@@ -306,6 +306,11 @@
         [ss.chatTableView scrollToBottomAtSection:0];
     }];
 }
-
+#pragma mark - ChatMoreToolDelegate
+- (void)chatMoreToolViewClickCell:(NSUInteger)index {
+    if (index == 0) { // 图片
+        
+    }
+}
 
 @end

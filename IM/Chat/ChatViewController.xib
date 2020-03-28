@@ -105,10 +105,10 @@
                     </constraints>
                 </view>
                 <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fSO-1s-qbv" customClass="ChatMoreToolView">
-                    <rect key="frame" x="0.0" y="686" width="414" height="200"/>
+                    <rect key="frame" x="0.0" y="686" width="414" height="300"/>
                     <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="200" id="97o-Pk-ohH"/>
+                        <constraint firstAttribute="height" constant="300" id="97o-Pk-ohH"/>
                     </constraints>
                 </view>
             </subviews>

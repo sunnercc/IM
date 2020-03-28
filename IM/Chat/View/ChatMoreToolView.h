@@ -10,8 +10,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ChatMoreToolView : UIView
+@protocol ChatMoreToolDelegate <NSObject>
+- (void)chatMoreToolViewClickCell:(NSUInteger)index;
+@end
 
+@interface ChatMoreToolView : UIView
+@property (nonatomic, weak) id<ChatMoreToolDelegate> delegate;
 @end
 
 NS_ASSUME_NONNULL_END
